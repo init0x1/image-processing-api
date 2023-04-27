@@ -16,9 +16,7 @@ describe('Test endpoint response', () => {
 })
 describe('Test Api ', () => {
   it('test / endpoint with valid query', async () => {
-    const response = await request
-      .get('/api/resize/')
-      .query({ height: 40, width: 50, image: 'r' })
+    const response = await request.get('/api/resize/').query({ height: 40, width: 50, image: 'r' })
     expect(response.status).toBe(200)
   })
   it('test / endpoint with unvaild', async () => {
