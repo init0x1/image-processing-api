@@ -42,6 +42,8 @@ const imageProcessingApi= async(image: string, height: number, width: number):Pr
         await sharp(noneresizedImage).resize({ height: height, width: width }).toFile(resizedImage)
     } catch (error) {
         console.error(`Error while resizing image: ${error}`)
+        throw new Error('Error resizing image')
+
     }
 }
 
