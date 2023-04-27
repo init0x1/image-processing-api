@@ -43,7 +43,6 @@ const imageProcessingApi= async(image: string, height: number, width: number):Pr
     } catch (error) {
         console.error(`Error while resizing image: ${error}`)
         throw new Error('Error resizing image')
-
     }
 }
 
