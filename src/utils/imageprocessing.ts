@@ -5,7 +5,7 @@ import sharp from 'sharp'
 const currentDirectory = __dirname
 const fullimagesDirectory = path.join(currentDirectory, '..', '..', 'fullimages')
 const resizedImagesDirectory = path.join(currentDirectory, '..', '..', 'resizedimages')
-//git
+
 //create resizedImagesDir if not created
 const createResizedDir = (): void => {
   fs.mkdir(resizedImagesDirectory, (err) => {
